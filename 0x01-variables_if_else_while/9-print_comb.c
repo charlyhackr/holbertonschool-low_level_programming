@@ -11,6 +11,7 @@ int main(void)
 	while (comb <= '9')
 	{
 		putchar(comb);
+		if (comb != '9')
 		putchar(',');
 		putchar(' ');
 		comb++;
