@@ -1,16 +1,18 @@
 #include <stdio.h>
 /**
- * main - print the numbers of one digit
+ * main - print te main function
  *
  * Return: 0
  */
 int main(void)
 {
-int num = 0;
-while (num < 10)
-{
-printf("%d\n", num);
-num++;
-}
-return (0);
+	char num = '0';
+
+	while (num <= '9')
+	{
+		putchar(num);
+		num++;
+	}
+	putchar('\n');
+	return (0);
 }
