@@ -6,23 +6,23 @@
  */
 int main(void)
 {
-	int a = 1, b = 1, c, count;
+	long int a = 1, b = 2, c;
+	int count;
 
-	printf("The series is \n");
-	printf("%d, %d, ", a, b);
+	printf("%ld, %ld, ", a, b);
 	count = 2;
-	while (count <= 50)
+	while (count <= 49)
 	{
 		c = a + b;
-		if (count <= 49)
+		if (count <= 48)
 		{
 			a = b;
 			b = c;
-			printf("%d, ", c);
+			printf("%ld, ", c);
 		}
 		else
 		{
-			printf("%d\n", c);
+			printf("%ld\n", c);
 		}
 		count++;
 	}
