@@ -11,12 +11,16 @@ int main(void)
 	printf("The series is \n");
 	printf("%d, %d, ", a, b);
 	count = 2;
-	while (count < 50)
+	while (count <= 50)
 	{
 		c = a + b;
 		a = b;
 		b = c;
-		printf("%d, ", c);
+		
+		if (count < 50)
+		{
+			printf("%d, ", c);
+		}
 		count++;
 	}
 	return (0);
