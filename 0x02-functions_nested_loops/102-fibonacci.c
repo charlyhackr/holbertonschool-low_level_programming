@@ -11,7 +11,7 @@ int main(void)
 	printf("The series is \n");
 	printf("%d, %d, ", a, b);
 	count = 2;
-	while (count < 10)
+	while (count < 50)
 	{
 		c = a + b;
 		a = b;
