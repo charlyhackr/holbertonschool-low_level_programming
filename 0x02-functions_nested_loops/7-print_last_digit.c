@@ -10,12 +10,12 @@ int print_last_digit(int nb)
 
 	if (lastnb < 0)
 	{
-		_putchat(-lastnb + '0');
+		_putchar(-lastnb + '0');
 		return (-lastnb);
 	}
 	else
 	{
-		_putchar ('0' + lastnb);
+		_putchar('0' + lastnb);
 		return (lastnb);
 	}
 }
