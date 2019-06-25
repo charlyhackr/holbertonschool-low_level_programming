@@ -1,13 +1,12 @@
-#include <holberton.h>
+#include "holberton.h"
 /**
- * Main function, entry point
+ * main - Prints Holberton as a message.
  *
- * Bucle while with array []
- * Return_ 0
+ * Return: Always 0 (SUcces)
  */
 int main(void)
 {
-	char letter[] = 'Holberton';
+	char letter[] = "Holberton";
 	int cont = 0;
 
 	while (letter[cont] != '\0')
@@ -18,4 +17,3 @@ int main(void)
 	_putchar('\n');
 	return (0);
 }
-	
