@@ -10,7 +10,7 @@ int main(void)
 
 	printf("The series is \n");
 	printf("%d, %d, ", a, b);
-	count =2;
+	count = 2;
 	while (count < num)
 	{
 		c = a + b;
@@ -19,4 +19,5 @@ int main(void)
 		printf("%d\n", c);
 		count++;
 	}
+	return (0);
 }
