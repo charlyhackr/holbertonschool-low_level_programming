@@ -2,14 +2,18 @@
 
 /**
  * print_numbers - print the numbers from 0 to 9
- *
+ * Description: You can only use _putchar twice time
  *
  */
 void print_numbers(void)
 {
-	int n;
+	int i;
 
-	n = 0;
-	while (n >= 0 && n > 10)
-		return (n);
+	i = 0;
+	while (i < 10)
+	{
+		_putchar(i + '0');
+		i++;
+	}
+	_putchar('\n');
 }
