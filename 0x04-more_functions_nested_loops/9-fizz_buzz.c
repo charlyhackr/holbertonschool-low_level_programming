@@ -4,6 +4,7 @@
  * main - fizz buzz for numbers 1 to 100
  * Description: MUltiples of 3 print Fizz. MUltiples of 5 print Buzz
  * multiples of both three and five print FizzBuzz.
+ * Return: 0 always
  */
 int main(void)
 {
