@@ -1,9 +1,8 @@
 #include <stdio.h>
-
 /**
  * main - finds and prints the largest prime factor of the number 612852475143
  * Return: 0
- */
+ **/
 int main(void)
 {
 	long int num1, num_t, least_factor;
