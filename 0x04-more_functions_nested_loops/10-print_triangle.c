@@ -1,10 +1,8 @@
 #include "holberton.h"
 
 /**
- *
- * print_triangle - function that prints a triangle, followed by a new line.
+ * print_triangle - Print a triangle aligned right using #
  * @size: Size of triangle
- *
  */
 void print_triangle(int size)
 {
@@ -14,7 +12,7 @@ void print_triangle(int size)
 	cont = size - 1;
 	while (space < size)
 	{
-		cont = size - 1 -space;
+		cont = size - 1 - space;
 		triangle = space + 1;
 		while (cont > 0)
 		{
