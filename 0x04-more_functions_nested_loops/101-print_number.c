@@ -11,7 +11,7 @@ void print_number(int n)
 	int boolchek;
 	long cil;
 
-	boolcheck = n;
+	boolchek = n;
 
 	if (cil < 0)
 	{
