@@ -7,39 +7,38 @@
  */
 void print_number(int n)
 {
-	long pten;
-	int boolchek;
-	long cil;
+	long m;
+	int c;
+	long num;
 
-	boolchek = n;
+	num = n;
 
-	if (cil < 0)
+	if (num < 0)
 	{
-		cil *= -1;
+		num *= -1;
 		_putchar('-');
 	}
 
-	pten = 1;
-	boolchek = 1;
-	while (boolchek)
+	m = 1;
+	c = 1;
+	while (c)
 	{
-		if (cil / (pten * 10) > 0)
-			pten *= 10;
+		if (num / (m * 10) > 0)
+			m *= 10;
 		else
-			boolchek = 0;
+			c = 0;
 	}
-
-	while (cil  >= 0)
+	while (num >= 0)
 	{
-		if (cil == 1)
+		if (m == 1)
 		{
-			_putchar(cil % 10 + '0');
-			cil = -1;
+			_putchar(num % 10 + '0');
+			num = -1;
 		}
 		else
 		{
-			_putchar((cil / cil % 10) + '0');
-			cil /= 10;
+			_putchar((num / m % 10) + '0');
+			m /= 10;
 		}
 	}
 }
