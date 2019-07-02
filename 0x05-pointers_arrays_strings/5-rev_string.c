@@ -10,7 +10,7 @@ void rev_string(char *s)
 	int frase, cont, aux;
 	char h;
 
-	for (frase = 0; s[frase] != '\0'; frase++ )
+	for (frase = 0; s[frase] != '\0'; frase++)
 		;
 
 	aux = frase;
