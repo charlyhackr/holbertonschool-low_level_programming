@@ -8,9 +8,10 @@
 void puts2(char *str)
 {
 	int char_jump_2;
+
 	for (char_jump_2 = 0; str[char_jump_2] != '\0'; char_jump_2++)
 	{
-		if (char_jump_2 % 2 == 0 )
+		if (char_jump_2 % 2 == 0)
 			_putchar (str[char_jump_2]);
 	}
 	_putchar('\n');
