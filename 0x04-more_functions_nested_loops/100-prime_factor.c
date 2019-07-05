@@ -5,26 +5,23 @@
  **/
 int main(void)
 {
-	long int num1, num_t, least_factor;
+	long int n = 612852475143;
+	long int cont, resul;
 
-	num1 = 2;
-	least_factor = 2;
-	num_t =  61285247514;
-
-	while (num_t > num1)
+	for (cont = 2; cont <= n; cont++)
 	{
-		if (num_t % num1 == 0)
+		if (n % cont == 0)
 		{
-			least_factor = 2;
-			num_t = num_t / num1;
-			num1 = num1 * num1;
-		}
-		else
-		{
-			num1++;
+			resul = cont;
+
+			while (n % cont == 0)
+			{
+				n /= cont;
+			}
 		}
 	}
-	least_factor = num1;
-	printf("%ld\n", least_factor);
+
+	printf("%ld\n", resul);
+
 	return (0);
 }
