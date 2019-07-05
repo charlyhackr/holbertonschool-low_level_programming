@@ -14,7 +14,7 @@ char *rot13(char *s)
 
 	for (cont = 0; s[cont] != '\0'; cont++)
 	{
-		if ((s[cont] > 64 && s[cont] < 91) || (s[cont] > 96 && s[cont] < 123))
+	  if ((s[cont] > 64 && s[cont] < 91) || (s[cont] > 96 && s[cont] < 123))
 		{
 			s[cont] = (s[cont] - 65 > 25) ?
 				codemin[s[cont] - 97] : codemay[s[cont] - 65];
