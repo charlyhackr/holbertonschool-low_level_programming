@@ -1,22 +1,47 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
- * print_number - function that prints an integer.
- * @n: int type number
- * Description: can only use_putchar to print
+ * print_number - that prints an integer.
+ * @n: integer ti print
  */
+
 void print_number(int n)
 {
-	unsigned int num = n;
+	int pot, nega, alma;
 
+	nega = 0;
+	pot = 1;
+	alma = n;
 	if (n < 0)
 	{
 		_putchar('-');
-		num = num * -1;
+		neg = 1;
 	}
 
-	if ((num / 10) > 0)
-		print_number(num / 10);
+	while (alma > 9 || alma < -9)
+	{
+		pot *= 10;
+		alma /= 10;
+	}
 
-	_putchar((num % 10) + '0');
+	while (pot > 0)
+	{
+		if (pot > 9)
+		{
+			if (!nega)
+				_putchar((n / pot % 10) + '0');
+			else
+				_putchar((n / pot % 10) * -1 + '0');
+
+			pot /= 10;
+		}
+		if (pot == 1)
+		{
+			if (nega)
+				_putchar((n % 10) * -1 + '0');
+			else
+				_putchar(n % 10 + '0');
+			power = 0;
+		}
+	}
 }
