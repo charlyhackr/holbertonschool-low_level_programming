@@ -15,7 +15,7 @@ void print_number(int n)
 	if (n < 0)
 	{
 		_putchar('-');
-		neg = 1;
+		nega = 1;
 	}
 
 	while (alma > 9 || alma < -9)
@@ -41,7 +41,7 @@ void print_number(int n)
 				_putchar((n % 10) * -1 + '0');
 			else
 				_putchar(n % 10 + '0');
-			power = 0;
+			pot = 0;
 		}
 	}
 }
