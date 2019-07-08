@@ -1,12 +1,13 @@
 #include "holberton.h"
 
 /**
- * _mencpy - copy memory area
- * @dest: char array to copy into
- * @src: char array to copy from
- * @n: number of elements to copy
- * Return: pointer to dest
+ * _memcpy - FUnction that copies memory area.
+ * @dest: POinter
+ * @src: POinter
+ * @n: Unsigned INteger
+ * Return: a pointer to dest
  */
+
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	char *punt;
