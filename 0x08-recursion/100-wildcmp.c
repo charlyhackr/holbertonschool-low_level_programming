@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * wildcmp - compares two strigsd
+ * wildcmp - compares two strings
  * @s1: string 1
  * @s2: string 2
  * Return: 1 if string identical and 0 otherwise
