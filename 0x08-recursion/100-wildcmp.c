@@ -2,8 +2,8 @@
 
 /**
  * wildcmp - compares two strigsd
- * @s1: string
- * @s2: string
+ * @s1: string 1
+ * @s2: string 2
  * Return: 1 if string identical and 0 otherwise
  */
 
