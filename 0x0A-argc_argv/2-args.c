@@ -3,9 +3,9 @@
 
 /**
  * main - rints all arguments it receives.
- * @argv:
- * @argc:
- * Return:
+ * @argv: array of string
+ * @argc: arguments count
+ * Return: Always 0
  */
 
 int main(int argc, char *argv[])
