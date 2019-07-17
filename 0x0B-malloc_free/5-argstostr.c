@@ -1,45 +1,61 @@
-#include "holberton.h"
 #include <stdlib.h>
 #include <stdio.h>
 
 /**
- * argstostr - concatenate all arguments of your program
- * @ac: argument count
- * @av: double pointer to array of strings passed to main
- * Return: Null if fail, else return pointer to new string
+ * _strlen - returns length of the given string
+ * @str: given string
+ * Return: returns the length of the given string
  */
+int _strlen(char *str)
+{
+	int i;
 
+	for (i = 0; str[i] != '\0'; ++i)
+		;
+
+	return (i);
+}
+
+/**
+ * argstostr - concatenates all the arguments of your program
+ * @ac: count of the given arguments
+ * @av: given arguments - multiple strings
+ * Return: a pointer to a new string, or NULL if it failes
+ */
 char *argstostr(int ac, char **av)
 {
-	char *s, *conct;
-	int fi, cj, sum;
+	int i, j, k, len;
+	char *concat;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	for (fi = 0, sum = 0; fi < ac; fi++)
-	{
-		for (cj = 0; *(*(av + 1) + cj) != '\0'; cj++, sum++)
-			;
-		sum++;
-	}
-	sum++;
+	len = 0;
 
-	s = malloc(sum * sizeof(char));
-	if (s == NULL)
+	for (i = 0; i < ac; ++i)
+	{
+		len += _strlen(av[i]);
+		++len;
+	}
+
+	++len;
+
+	concat = malloc(len * sizeof(char));
+	if (concat == NULL)
 		return (NULL);
+	k = 0;
 
-	conct = s;
-	for (fi = 0; fi < ac; fi++)
+	for (i = 0; i < ac; ++i)
 	{
-		for (cj = 0; av[fi][cj] != '\0'; cj++)
+		for (j = 0; av[i][j] != '\0'; ++j)
 		{
-			*s = av[fi][cj];
-			s++;
+			concat[k] = av[i][j];
+			++k;
 		}
-		*s = '\n';
-		s++;
+		concat[k] = '\n';
+		++k;
 	}
+	concat[k] = '\0';
 
-	return (conct);
+	return (concat);
 }
