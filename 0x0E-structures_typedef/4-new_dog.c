@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include "dog.h"
+#include <stdlib.h>
 
 /**
  * new_dog - create a new dog
@@ -10,40 +10,40 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *dogn;
-	int ai, je, ki;
+	struct dog *doge;
+	int i, j, k;
 	char *n, *o;
 
-	dogn = malloc(sizeof(struct dog));
-	if (dogn == NULL)
+	doge = malloc(sizeof(struct dog));
+	if (doge == NULL)
 		return (NULL);
 
-	for (ai = 0; name[ai] != '\0'; ai++)
+	for (i = 0; name[i] != '\0'; i++)
 		;
-	for (je = 0; owner[je] != '\0'; je++)
+	for (j = 0; owner[j] != '\0'; j++)
 		;
 
-	n = malloc(sizeof(char) * ai + 1);
+	n = malloc(sizeof(char) * i + 1);
 	if (n == NULL)
 	{
-		free(dogn);
+		free(doge);
 		return (NULL);
 	}
-	o = malloc(sizeof(char) * je + 1);
+	o = malloc(sizeof(char) * j + 1);
 	if (o == NULL)
 	{
-		free(dogn);
-		free(dogn);
+		free(n);
+		free(doge);
 		return (NULL);
 	}
-	for (ki = 0; ki <= ai; ki++)
-		n[ki] = name[ki];
-	for (ki = 0; ki <= je; ki++)
-		o[ki] = owner[ki];
+	for (k = 0; k <= i; k++)
+		n[k] = name[k];
+	for (k = 0; k <= j; k++)
+		o[k] = owner[k];
 
-	dogn->name = n;
-	dogn->age = age;
-	dogn->owner = o;
+	doge->name = n;
+	doge->age = age;
+	doge->owner = o;
 
-	return (dogn);
+	return (doge);
 }
