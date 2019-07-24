@@ -1,7 +1,7 @@
 #include "function_pointers"
 
 /**
- * array_iterator - executes a function given as a parameter on each element of an array.
+ * array_iterator -function given as a parameter on each element of an array.
  * @array: array of integers
  * @size: size of array
  * @action: function pointer
