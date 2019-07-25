@@ -35,9 +35,9 @@ int op_sub(int num1, int num2)
  * Return: an integer
  */
 
-int op_mul(int n1, int n2)
+int op_mul(int num1, int num2)
 {
-	return (n1 * n2);
+	return (num1 * num2);
 }
 
 /**
