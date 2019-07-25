@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
-#include "functions_pointer.h"
+#include "function_pointers.h"
 
 /**
  * main - searchs for an integer
@@ -13,12 +13,12 @@
 
 int main(int argc, char *argv[])
 {
-	int n1;
-	int n2;
+	int num1;
+	int num2;
 	int total;
 
-	n1 = 0;
-	n2 = 0;
+	num1 = 0;
+	num2 = 0;
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -32,9 +32,9 @@ int main(int argc, char *argv[])
 	}
 	if (argv[2][1] == '\0')
 	{
-		n1 = atoi(argv[1]);
-		n2 = atoi(argv[3]);
-		total = (*get_op_func(argv[2]))(n1, n2);
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[3]);
+		total = (*get_op_func(argv[2]))(num1, num2);
 		printf("%d\n", total);
 	} else
 	{
