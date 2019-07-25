@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
+#include "functions_pointer.h"
 
 /**
  * main - searchs for an integer
@@ -35,7 +36,7 @@ int main(int argc, char *argv[])
 		n2 = atoi(argv[3]);
 		total = (*get_op_func(argv[2]))(n1, n2);
 		printf("%d\n", total);
-	}else
+	} else
 	{
 		printf("Error\n");
 		exit(99);
