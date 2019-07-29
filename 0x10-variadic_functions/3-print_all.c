@@ -67,8 +67,8 @@ void print_all(const char * const format, ...)
 	form_t arr_fm[] = {
 		{"c", print_char},
 		{"i", print_ent},
-		{"s", print_flo},
-		{"f", print_str},
+		{"s", print_str},
+		{"f", print_flo},
 		{NULL, NULL}
 	};
 
