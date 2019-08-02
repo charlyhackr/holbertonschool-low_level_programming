@@ -13,7 +13,8 @@ main:
 	mov  rdi,fmt
 	mov  rsi,msg
 	mov  rax,0		; Call C function
-
+	call printf
+	
 	pop  rbp		; restore stack
 
 	mov  rax,0		; normal, no error, return value
