@@ -4,7 +4,7 @@
 /**
  * print_list -prints all the elements of a list_t list.
  * @h: head of linked list
- * Return counter
+ * Return: counter
  */
 
 size_t print_list(const list_t *h)
@@ -14,7 +14,7 @@ size_t print_list(const list_t *h)
 	while (h != NULL)
 	{
 		if (h->str == NULL)
-		
+		{
 			printf("[0] %p\n", h->str);
 			h = h->next;
 			cont++;
