@@ -19,6 +19,6 @@ void free_dlistint(dlistint_t *head)
 	{
 		alm = nAux;
 		nAux = nAux->next;
-		free(hold);
+		free(alm);
 	}
 }
