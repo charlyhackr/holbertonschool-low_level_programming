@@ -44,8 +44,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		free(nuevo);
 		return (NULL); }
 	else if (idx != conta && nAux == NULL)
-	{
-		free(nuevo);
+	{ free(nuevo);
 		return (NULL); }
 	prev = nAux, nAux = nAux->next, nuevo->prev = prev, nuevo->next = nAux;
 	prev->next = nuevo, nAux->prev = nuevo;
