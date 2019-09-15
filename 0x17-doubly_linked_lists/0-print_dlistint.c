@@ -15,7 +15,7 @@ size_t print_dlistint(const dlistint_t *h)
 	while (nAux && nAux->prev)
 		nAux = nAux->prev;
 
-	for (count = 0; nAux; conta++, nAux = nAux->next)
+	for (conta = 0; nAux; conta++, nAux = nAux->next)
 		printf("%d\n", nAux->n);
 
 	return (conta);
