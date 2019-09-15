@@ -12,10 +12,10 @@ size_t print_dlistint(const dlistint_t *h)
 	size_t conta;
 
 	nAux = h;
-	while (nAux && nAux -> prev)
-		nAux = nAux -> prev;
+	while (nAux && nAux->prev)
+		nAux = nAux->prev;
 
-	for (count = 0; nAux; conta++, nAux = nAux -> next)
-		printf("%d\n", nAux -> n);
+	for (count = 0; nAux; conta++, nAux = nAux->next)
+		printf("%d\n", nAux->n);
 
 	return (conta);
