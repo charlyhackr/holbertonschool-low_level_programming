@@ -9,20 +9,20 @@
 dlistint_t *insert_dnodeint_at_idx(dlistint_t **h, unsigned int idx, int n)
 {
 	unsigned int conta;
-	dlistint_ *nAux, *prev, *nuevo;
+	dlistint_t *nAux, *prev, *nuevo;
 
 	nuevo = malloc(sizeof(dlistint_t));
 	if (nuevo == NULL)
 		return (NULL);
 	nuevo->n = n;
-	for (aAux = *h, conta = 1; nAux && conta < idx; conta++, nAux = nAux->next)
+	for (nAux = *h, conta = 1; nAux && conta < idx; conta++, nAux = nAux->next)
 		prev = nAux;
 	if (idx == 0)
 	{
 		*h = nuevo;
 		nuevo->prev = NULL;
 		nuevo->next = (nAux == NULL) ? NULL : nAux;
-		return (new); }
+		return (nuevo); }
 	if (idx == 1)
 	{
 		prev = *h;
