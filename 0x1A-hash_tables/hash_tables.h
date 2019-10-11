@@ -7,7 +7,7 @@
 
 /**
  * struct hash_node_s - Node of a hash table
- * The key is unique in the HashTable
+ * @key: is unique in the HashTable
  * @value: The value corresponding to a key
  * @next: A pointer to the next node of the list
  */
