@@ -3,6 +3,7 @@
 /**
  * hash_table_delete - delete hash table
  * @ht: hash table
+ * Return: always
  */
 void hash_table_delete(hash_table_t *ht)
 {
@@ -27,7 +28,6 @@ void hash_table_delete(hash_table_t *ht)
 			free(anter->key);
 			free(anter->value);
 			free(anter);
-			free(temp);
 		}
 	}
 
