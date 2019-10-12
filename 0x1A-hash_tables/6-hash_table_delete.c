@@ -3,7 +3,6 @@
 /**
  * hash_table_delete - delete hash table
  * @ht: hash table given
- * Return: 0
  *
  */
 
