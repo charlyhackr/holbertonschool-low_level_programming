@@ -4,7 +4,7 @@
 
 def island_perimeter(grid):
     """Return the perimiter of an island."""
-    
+
     width = len(grid[0])
     height = len(grid)
     borders = 0
