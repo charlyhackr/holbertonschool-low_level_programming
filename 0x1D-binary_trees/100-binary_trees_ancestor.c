@@ -4,7 +4,7 @@
  * binary_trees_ancestor - FINd the lowest common ancestor of two nodes.
  * @first: POinter to the first node
  * @second: pointer to the second node
- * Return : if no common ancestors return NULL, else return common ancestor
+ * Return: if no common ancestors return NULL, else return common ancestor
  */
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 				     const binary_tree_t *second)
