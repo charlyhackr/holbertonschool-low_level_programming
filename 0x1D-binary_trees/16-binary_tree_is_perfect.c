@@ -24,7 +24,7 @@ size_t depth(const binary_tree_t *tree)
 }
 
 /**
- * get_leaf - Returns a leaf of a binary tree.
+ * obt_leaf - Returns a leaf of a binary tree.
  * @tree: A pointer to the root node of the tree to find a leaf in.
  *
  * Return: A pointer to the first encountered leaf.
